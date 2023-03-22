@@ -35,6 +35,8 @@ for i, j in friendships:
     # this works because users[i] is the user whose id is i
     users[i]["friends"].append(users[j]) # add i as a friend of j
     users[j]["friends"].append(users[i]) # add j as a friend of i
+    
+# Visualise with https://plotly.com/python/network-graphs/
 
 def number_of_friends(user):
     """how many friends does _user_ have?"""
